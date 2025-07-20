@@ -1,7 +1,6 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
-import SignupPage from '../pages/SignupPage';
-import LoginPage from '../pages/LoginPage';
+import AuthPage from '../pages/AuthPage';
 import LandingPage from '../pages/LandingPage';
 import PrivateRoute from './PrivateRoute';
 import PublicRoute from './PublicRoute';
@@ -27,8 +26,9 @@ const AppRoutes = () => {
         <Route path="/" element={<LandingPage />} />
 
         <Route element={<PublicRoute />}>
-          <Route path="/login" element={<LoginPage />} />
-          <Route path="/signup" element={<SignupPage />} />
+          <Route path="/login" element={<AuthPage />} />
+          <Route path="/signup" element={<AuthPage />} />
+          <Route path="/auth" element={<AuthPage />} />
           <Route path="/google-auth" element={<GoogleAuthHandler />} />
           <Route path="/forgot-password" element={<ForgotPasswordPage />} />
           <Route path="/verify-otp" element={<VerifyOTPPage />} />
