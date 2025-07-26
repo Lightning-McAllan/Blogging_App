@@ -129,7 +129,7 @@ export const Footer = ({ isLoading = false }) => {
               <FontAwesomeIcon icon={faHeart} className="text-red-500 heartbeat" />
             </Glow>
           </GlowCapture>
-          <p>by <b>Krit</b></p>
+          <p>by <b>Akshat</b></p>
         </div>
 
       </footer >
